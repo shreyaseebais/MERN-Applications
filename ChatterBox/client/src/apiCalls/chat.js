@@ -8,3 +8,13 @@ export const getAllChats = async () => {
     return err;
   }
 };
+export const createNewChat = async (members) => {
+  try {
+    const response = await axiosInstance.post("api/chat/create-new-chat", {
+      members,
+    });
+    return response.data;
+  } catch (err) {
+    return err;
+  }
+};
