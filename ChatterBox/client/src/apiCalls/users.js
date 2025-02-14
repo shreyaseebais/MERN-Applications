@@ -9,14 +9,14 @@ export const getLoggedUser = async () => {
     }
 }
 
-// export const getAllUsers = async () => {
-//     try{
-//         const response = await axiosInstance.get(url + 'api/user/get-all-users');
-//         return response.data;
-//     }catch(error){
-//         return error;
-//     }
-// }
+export const getAllUsers = async () => {
+    try{
+        const response = await axiosInstance.get('api/user/get-all-users');
+        return response.data;
+    }catch(error){
+        return error;
+    }
+}
 
 // export const uploadProfilePic = async (image) => {
 //     try{

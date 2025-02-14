@@ -23,6 +23,7 @@ function Login() {
       if (response.success) {
         toast.success(response.message);
         localStorage.setItem("token", response.token);
+        console.log('Success: Redirect to /')
         window.location.href = "/";
       } else {
         toast.error(response.message);

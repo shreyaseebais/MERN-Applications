@@ -1,11 +1,12 @@
 import Header from "./components/header";
+import SideBar from "./components/sidebar";
 
 function Home() {
   return (
     <div className="home-page">
-        <Header></Header>
+      <Header></Header>
       <div className="main-content">
-        {/* <!--SIDEBAR LAYOUT--> */}
+        <SideBar></SideBar>
         {/* <!--CHAT AREA LAYOUT--> */}
       </div>
     </div>
